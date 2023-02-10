@@ -1,0 +1,3 @@
+const getClientInteractions = {};
+
+export { getClientInteractions };
