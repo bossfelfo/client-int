@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+Please rename the env.example file to just .env and assign 'http://substantiveresearch.pythonanywhere.com/' as API Url
 
 In the project directory, you can run:
 
