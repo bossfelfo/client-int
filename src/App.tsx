@@ -185,33 +185,34 @@ function App() {
                 data={currentTableData}
               />
             </Col>
-            <Col className='cardView py-4 px-4'>
-              <Row className='mt-auto'>
-                <h4 className='mb-4 mt-2 '> Interactions by Sectors</h4>
-                {totalSectorData.length <= 0 ||
-                  (totalSectorData.length === undefined && <p className='mt-6'>No Data</p>)}
-                <Col xs={12} md={6} className='d-flex flex-column justify-content-center align-items-center'>
-                  <Chart options={apexDonutOpts} series={counts} type='donut' width='400' labels={names} />
-                </Col>
+            {totalSectorData.length > 0 && (
+              <Col className='cardView py-4 px-4'>
+                <Row className='mt-auto'>
+                  <h4 className='mb-4 mt-2 '> Interactions by Sectors</h4>
 
-                <Col xs={12} md={6}>
-                  <div className='chart-widget-list mt-xs-4'>
-                    {totalSectorData.map((int: any, i: number) => (
-                      <p key={i}>
-                        <i className='mdi mdi-square text-primary'></i>
-                        {/* Sector ID */}
-                        <span>
-                          {/* {' '}
+                  <Col xs={12} md={6} className='d-flex flex-column justify-content-center align-items-center'>
+                    <Chart options={apexDonutOpts} series={counts} type='donut' width='400' labels={names} />
+                  </Col>
+
+                  <Col xs={12} md={6}>
+                    <div className='chart-widget-list mt-xs-4'>
+                      {totalSectorData.map((int: any, i: number) => (
+                        <p key={i}>
+                          <i className='mdi mdi-square text-primary'></i>
+                          {/* Sector ID */}
+                          <span>
+                            {/* {' '}
                           {i + 1} {'  '}  */}
-                          {int.name}
-                        </span>
-                        <span className='float-end'>{int.count}</span>
-                      </p>
-                    ))}
-                  </div>
-                </Col>
-              </Row>
-            </Col>
+                            {int.name}
+                          </span>
+                          <span className='float-end'>{int.count}</span>
+                        </p>
+                      ))}
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            )}
           </Row>
         )}
       </Container>
