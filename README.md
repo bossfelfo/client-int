@@ -9,32 +9,30 @@ In the project directory, you can run:
 
 ### `npm start`
 
-How to start the project
-Open up your terminal to download and start or test the project by running these commands.
+ <h3>How to start the project</h3>
+ <p>Open up your terminal to download and start or test the project by running these commands.</p>
+ <p>Create a new folder</p>
+ <pre><code>mkdir felix-sr-task</code></pre>
+ 
+ <p>Navigate to the new folder</p>
+ <pre><code>cd felix-sr-task</code></pre>
+ 
+ <p>Clone the repository</p>
+ <pre><code>git clone https://github.com/bossfelfo/client-int.git</code></pre>
+ 
+ <p>Navigate to the project folder by running</p> 
+ <pre><code>cd client-int</code></pre>
+ 
+ <p>Install all dependencies</p> 
+ <pre><code>npm install</code></pre>
+ 
+ <p>Start the project in development server</p>
+ <pre><code>npm start</code></pre>
+ <p>OR</p>
+ <p>Run tests on the project</p>
+ <pre><code>npm test</code></pre>
 
-Create a new folder
 
-mkdir felix-sr-task
-Navigate to the new folder
-
-cd felix-sr-task
-Clone the repository
-
-git clone https://github.com/bossfelfo/client-int.git
-Navigate to the project folder by running
-
-cd client-int
-Install all dependencies
-
-npm install
-Start the project in development server
-
-npm start
-OR
-
-Run tests on the project
-
-npm test
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
