@@ -74,9 +74,22 @@ function App() {
     chart: {
       type: 'donut'
     },
-    // colors: ['#727cf5', '#0acf97', '#fa5c7c', '#ffbc00'],
+    colors: [
+      '#727cf5',
+      '#5d9999',
+      '#cd5c5c',
+      '#b0c4de',
+      '#20b2aa',
+      '#f4a460',
+      '#9370db',
+      '#3cb371',
+      '#f08080',
+      '#6495ed',
+      '#dc143c'
+    ],
     legend: {
-      show: false
+      show: true,
+      position: 'bottom'
     },
     labels: names,
     responsive: [
@@ -180,7 +193,7 @@ function App() {
                 </Col>
 
                 <Col xs={12} md={6}>
-                  <div className='chart-widget-list'>
+                  <div className='chart-widget-list mt-xs-4'>
                     {totalSectorData.map((int: any, i: number) => (
                       <p key={i}>
                         <i className='mdi mdi-square text-primary'></i>
