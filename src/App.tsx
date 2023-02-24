@@ -188,6 +188,7 @@ function App() {
             <Col className='cardView py-4 px-4'>
               <Row className='mt-auto'>
                 <h4 className='mb-4 mt-2 '> Interactions by Sectors</h4>
+                {totalSectorData.length === 0 && <p className='mt-6'>No Data</p>}
                 <Col xs={12} md={6} className='d-flex flex-column justify-content-center align-items-center'>
                   <Chart options={apexDonutOpts} series={counts} type='donut' width='400' labels={names} />
                 </Col>
