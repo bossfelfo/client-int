@@ -1,9 +1,11 @@
-const url = 'http://substantiveresearch.pythonanywhere.com/';
+const apiUrl = 'http://substantiveresearch.pythonanywhere.com/';
 
-const apiUrl = process.env.REACT_APP_API_URL || process.env.API_URL || url;
+const apiUrlENV = process.env.REACT_APP_API_URL || process.env.API_URL;
+
+const url = apiUrl || apiUrlENV;
 
 const getClientInteractions = async () => {
-  const result = await fetch(apiUrl!).then((res) => res.json());
+  const result = await fetch(url!).then((res) => res.json());
 
   return { result };
 };
